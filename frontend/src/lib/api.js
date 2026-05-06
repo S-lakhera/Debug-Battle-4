@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_BASE_URL = import.meta.env.PROD 
-  ? 'https://your-backend-app-name.onrender.com/api' 
+  ? 'https://product-management-88ng.onrender.com/api' 
   : '/api';
 
 const api = axios.create({
