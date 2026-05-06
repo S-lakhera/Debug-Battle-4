@@ -1,7 +1,11 @@
 import axios from 'axios';
 
+const API_BASE_URL = import.meta.env.PROD 
+  ? 'https://your-backend-app-name.onrender.com/api' 
+  : '/api';
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: API_BASE_URL,
   headers: { 'Content-Type': 'application/json' },
 });
 

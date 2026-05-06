@@ -11,7 +11,9 @@ connectDB();
 const app = express();
 
 // Middleware 
-app.use(cors());
+app.use(cors({
+  origin:["https://debug-battle-4-eight.vercel.app","http://localhost:5173"]
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
